@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+  background: rgb(184, 231, 238);
+  padding: 20px 0 100px ;
+  height: 100vh;
+}
+.title {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.addForm{
+  display: flex;
+  margin-bottom: 20px;
+}
+.addBlock{
+  width: 250px;
+  outline: none;
+  border: none;
+  margin-right: 10px;
+  padding: 10px;
+  padding-left: 15px;
+  border-radius: 50px;
+}
+
+.addButton {
+  outline: none;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  font-size: 28px;
+  background-color: transparent;
+  color: #e795be;
+}
+.todoBlock{
+  display: flex;
+  align-items: center;
+  padding: 13px 0;
+  border-bottom: 1px black solid;
+}
+.textBlock-disable{
+  cursor: pointer;
+  background: transparent;
+  outline: none;
+  border: none;
+  width: 230px;
+  font-size: 14px;
+  margin: 0 10px;
+}
+.textBlock-enable{
+  cursor: auto;
+  padding: 0 5px;
+  border-radius: 50px;
+  border: 1px solid black;
+  background: white;
+}
+.editButton{
+  cursor: pointer;
+  font-size: 18px;
+  transition: .2s;
+}
+.editButton:hover{
+  color: rgb(51, 56, 49);
+}
+.deleteButton{
+  margin-left: 5px;
+  font-size: 18px;
+  color: rgb(100, 99, 97);
+  cursor: pointer;
+  transition: .2s;
+}
+.deleteButton:hover{
+  color: rgb(255, 0, 0);
+}
+.deleteBg{
+  outline: none;
+  border: none;
+  background: transparent;
+}
